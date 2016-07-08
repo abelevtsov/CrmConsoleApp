@@ -13,11 +13,6 @@ namespace CrmConsoleApp.Extensions
                      .LifeStyle.Transient
                      .DependsOn(Dependency.OnValue("cronExpression", cronExpression)));
 
-            container.Register(Classes.FromAssemblyContaining<T>()
-                     .BasedOn<JobRunner<T>>()
-                     .WithService
-                     .FromInterface());
-
             return container;
         }
     }
