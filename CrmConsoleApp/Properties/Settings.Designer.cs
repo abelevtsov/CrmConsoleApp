@@ -34,7 +34,7 @@ namespace CrmConsoleApp.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=RAL-CRMDEV;Initial Catalog=RAL_MSCRM_ISV;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVERNAME;Initial Catalog=MSCRM_ISV;Integrated Security=True")]
         public string ISVConnectionString {
             get {
                 return ((string)(this["ISVConnectionString"]));
